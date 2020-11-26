@@ -12,7 +12,7 @@ export default class Home extends Component {
           <a href="www.axyse.com">
             <h1>axyse</h1>
           </a>
-          <p>This is my website where I post my code, art and design</p>
+          <p>This is website with my front-end gallery, art and design</p>
         </div>
         <div className="gin-box">
           <div id="gin" style={styleGin}>
