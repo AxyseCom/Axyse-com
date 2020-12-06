@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import Header from './pages/homePage/Header'
 import Home from './pages/homePage/Home'
-import Merch from './pages/merchPage/Merch'
-import Cap from './pages/merchPage/components/clothes/Cap'
+import Design from './pages/designPage/Design'
+import Cap from './pages/designPage/components/clothes/Cap'
 import Graffiti from './pages/graffitiPage/Graffiti'
 import NotFound from './pages/errorPage/NotFound'
 import Footer from './pages/homePage/Footer'
@@ -19,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
-          <Route exact path="/merch" component={Merch} />
+          <Route exact path="/design" component={Design} />
           <Route exact path="/graffiti" component={Graffiti} />
           <Route exact path="/cap" component={Cap} />
           <Route component={NotFound} />

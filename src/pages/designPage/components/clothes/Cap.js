@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import hummerLogo from "../../../../img/hummer-logo.svg";
 import machete from "../../../../img/machete.svg";
+import cap from "../../../../img/wear/snb.png";
 
 export default class Merch extends Component {
   render() {
@@ -28,7 +29,7 @@ export default class Merch extends Component {
               <Col>
                 <div className="wear">
                   <img
-                    src={hummerLogo}
+                    src={cap}
                     height="100px"
                     alt="hummer logo"
                     className="hummer-img"

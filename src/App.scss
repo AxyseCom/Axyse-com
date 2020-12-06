@@ -377,18 +377,38 @@ body {
   }
 
   .clothes-box {
+    height: 300px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
     a {
+      position: relative;
       display: block;
       text-align: center;
       height: 100%;
+      div{
+        height: 100%;
+        width: 100%;
+      }
+      &:hover{
+        div{
+          position: absolute;
+          top: 0;
+          left: 0px;
+          height: 100%;
+          width: 100%;
+          background-color: #ff00006e;
+          box-shadow: 0 0 10px #17a6f0, inset 33px 26px 100px #3c023a;
+        }
+      }
     }
   }
 
   .hell-cat-box {
     position: relative;
     display: inline-block;
-    height: 937px;
-    min-height: 935px;
+    height: 1100px;
+    min-height: 1100px;
     margin: auto;
     text-align: center;
     .hellcat {
@@ -420,8 +440,8 @@ body {
       background-color: $horror-color;
       transform: rotate(132deg);
       position: absolute;
-      top: 240px;
-      right: 83px;
+      top: 315px;
+      right: 120px;
       animation-name: blood-anim;
       animation-duration: 1.5s;
       animation-delay: 0.5s;
@@ -442,8 +462,8 @@ body {
       background-color: $horror-color;
       transform: rotate(132deg);
       position: absolute;
-      top: 240px;
-      right: 74px;
+      top: 315px;
+      right: 125px;
       animation-name: blood-anim-2;
       animation-duration: 1.5s;
       animation-delay: 1.2s;
@@ -463,8 +483,8 @@ body {
       background-color: $horror-color;
       transform: rotate(132deg);
       position: absolute;
-      top: 240px;
-      right: 69px;
+      top: 315px;
+      right: 120px;
       animation-name: blood-anim-3;
       animation-duration: 1.5s;
       animation-delay: 2.1s;
@@ -484,8 +504,8 @@ body {
       background-color: $horror-color;
       transform: rotate(132deg);
       position: absolute;
-      top: 240px;
-      right: 67px;
+      top: 315px;
+      right: 115px;
       animation-name: blood-anim-4;
       animation-duration: 1.5s;
       animation-delay: 4s;
@@ -505,8 +525,8 @@ body {
       background-color: $horror-color;
       transform: rotate(132deg);
       position: absolute;
-      top: 240px;
-      right: 60px;
+      top: 315px;
+      right: 110px;
       animation-name: blood-anim-5;
       animation-duration: 1.5s;
       animation-delay: 3s;
@@ -526,8 +546,8 @@ body {
       background-color: $horror-color;
       transform: rotate(-45deg);
       position: absolute;
-      bottom: 175px;
-      left: 118px;
+      bottom: 315px;
+      left: 217px;
       animation-name: blood-hum-anim;
       animation-duration: 2s;
       animation-iteration-count: infinite;
@@ -550,8 +570,8 @@ body {
       background-color: $horror-color;
       transform: rotate(-45deg);
       position: absolute;
-      bottom: 188px;
-      left: 130px;
+      bottom: 316px;
+      left: 240px;
       animation-name: blood-hum-anim-2;
       animation-duration: 2.1s;
       animation-delay: 1.2s;
@@ -575,8 +595,8 @@ body {
       background-color: $horror-color;
       transform: rotate(-45deg);
       position: absolute;
-      bottom: 187px;
-      left: 139px;
+      bottom: 316px;
+      left: 250px;
       animation-name: blood-hum-anim-3;
       animation-duration: 2.1s;
       animation-delay: 1.7s;
@@ -620,6 +640,9 @@ body {
     background-color: $orange-color;
     margin: auto;
     margin-top: 20px;
+    img{
+      margin-top: 30%;
+    }
   }
 }
 

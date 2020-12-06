@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logoReacr from "../../img/react-logo.svg"
 import {
   Navbar,
   Container,
@@ -21,7 +22,7 @@ export default class Footer extends Component {
           className="d-inline-block align-top"
           alt="Logo"
         />
-        <p>this website was writting on React.js and SASS</p>
+        
       </footer>
     );
   }

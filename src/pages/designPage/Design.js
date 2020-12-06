@@ -3,7 +3,7 @@ import Space from "./components/Space";
 import Forest from "./components/Forest";
 import Horror from "./components/Horror";
 
-export default class Merch extends Component {
+export default class Design extends Component {
   render() {
     return (
       <div className="container-fluid p-0 cosmo-page">
