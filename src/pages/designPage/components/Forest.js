@@ -10,12 +10,10 @@ const forestStyle = {
   backgroundRepeat: "no-repeat",
 };
 
-export default class Forest extends Component {
-  render() {
-    return (
-      <>
-        <div className="forest" style={forestStyle}></div>
-      </>
-    );
-  }
+export default function Forest() {
+  return (
+    <>
+      <div className="forest" style={forestStyle}></div>
+    </>
+  );
 }
