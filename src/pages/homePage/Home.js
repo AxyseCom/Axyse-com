@@ -10,32 +10,36 @@ export default class Home extends Component {
       <div className="home-main">
         <div className="page-info">
           <a href="www.axyse.com">
-            <h1>axyse</h1>
+            <h1>axyse studio</h1>
           </a>
-          <p>This is website with my front-end gallery, art and design</p>
+          <p>Ваш сайт будет огонь!</p>
         </div>
         <div className="gin-box">
           <div id="gin" style={styleGin}>
             <div className="circle">
               <div className="logo-link" id="link1">
-                <a href="https://www.youtube.com/channel/UCoBnBDVTfucEjRzEK__LiSA" target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
+                <i class="fab fa-html5"></i>
+              </div>
+              <div className="logo-link" id="link1-1">
+                <i class="fab fa-css3-alt"></i>
               </div>
               <div className="logo-link" id="link2">
-                <a href="https://vk.com/artiuga" target="_blank">
-                  <i className="fab fa-vk"></i>
-                </a>
+                <i class="fab fa-sass"></i>
+              </div>
+              <div className="logo-link" id="link2-1">
+                <i class="fab fa-python"></i>
               </div>
               <div className="logo-link" id="link3">
-                <a href="https://www.instagram.com/a_axyse/" target="_blank">
-                  <i className="fab fa-instagram"></i>
-                </a>
+                <i class="fab fa-js"></i>
+              </div>
+              <div className="logo-link" id="link3-1">
+                <i class="fas fa-cat"></i>
               </div>
               <div className="logo-link" id="link4">
-                <a href="https://github.com/AxyseCom" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
+                <i class="fab fa-react"></i>
+              </div>
+              <div className="logo-link" id="link4-1">
+                <i class="fab fa-node-js"></i>
               </div>
             </div>
             <div id="fireball"></div>

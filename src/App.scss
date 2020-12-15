@@ -95,7 +95,6 @@ body {
         }
         i {
           font-size: 50px;
-          font-weight: bolder;
           margin-top: 25%;
           color: $orange-color;
           &:hover {
@@ -107,17 +106,33 @@ body {
         top: 0px;
         left: 0px;
       }
+      #link1-1 {
+        top: -58px;
+        left: 44%;
+      }
       #link2 {
         top: 0px;
         right: 0px;
+      }
+      #link2-1 {
+        bottom: -70px;
+        right: 43%;
       }
       #link3 {
         bottom: 0px;
         right: 0px;
       }
+      #link3-1 {
+        bottom: 41%;
+        right: -60px;
+      }
       #link4 {
         bottom: 0px;
         left: 0px;
+      }
+      #link4-1 {
+        bottom: 44%;
+        left: -65px;
       }
     }
     #gin {
@@ -410,6 +425,7 @@ body {
     height: 1100px;
     min-height: 1100px;
     margin: auto;
+    margin-bottom: 100px;
     text-align: center;
     .hellcat {
       position: relative;

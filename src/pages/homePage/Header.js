@@ -39,8 +39,9 @@ export default function Header() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/design">Design</Nav.Link>
+            <Nav.Link href="/home">Axyse</Nav.Link>
+            <Nav.Link href="/design">Портфолио</Nav.Link>
+            <Nav.Link href="/css-gallery">CSS ГАЛЕРЕЯ</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
