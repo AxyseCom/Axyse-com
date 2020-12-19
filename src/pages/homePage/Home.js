@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Gin from "../../img/gin-cat.svg";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 const styleGin = {
   backgroundImage: `url(${Gin})`,
 };
@@ -7,6 +9,8 @@ const styleGin = {
 export default class Home extends Component {
   render() {
     return (
+      <>
+      <Header />
       <div className="home-main">
         <div className="page-info">
           <a href="www.axyse.com">
@@ -47,6 +51,8 @@ export default class Home extends Component {
           </div>
         </div>
       </div>
+      <Footer />
+      </>
     );
   }
 }

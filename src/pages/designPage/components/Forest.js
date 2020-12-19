@@ -10,10 +10,23 @@ const forestStyle = {
   backgroundRepeat: "no-repeat",
 };
 
+const amazingMountStyle = {
+  height: "150px",
+  width: "150px",
+  backgroundColor: "red",
+};
+
 export default function Forest() {
   return (
     <>
-      <div className="forest" style={forestStyle}></div>
+      <div className="forest" style={forestStyle}>
+        <div style={amazingMountStyle}>
+          <a
+            href="/amazing-mount"
+            style={{ display: "block", height: "100%", width: "100%" }}
+          ></a>
+        </div>
+      </div>
     </>
   );
 }

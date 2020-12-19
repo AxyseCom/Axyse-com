@@ -1,0 +1,113 @@
+$moon: #beccf3;
+$opacity-color: rgba(255, 255, 255, 0);
+$just-black: #010305;
+
+.website-body {
+  .back-to {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    z-index: 10000;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/images/header-back1.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px;
+      align-items: center;
+      .logo {
+        a {
+          h1 {
+            font-size: 50px;
+            color: $moon;
+          }
+        }
+      }
+      .nav {
+        display: flex;
+        a {
+          color: $moon;
+          margin-right: 30px;
+          margin-left: 30px;
+          font-weight: bold;
+          opacity: .75;
+          transition: opacity .1s;
+          &:hover{
+            opacity: 1;
+          }
+          &:first-child{
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+    .top-header {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: 600px;
+      width: 100%;
+      background-image: url(../assets/images/top-layer.png);
+      background-position: center;
+      background-size: cover;
+      z-index: 1000;
+    }
+    .topic-box {
+      position: absolute;
+      bottom: 60%;
+      width: 100%;
+      z-index: 500;
+      text-align: center;
+      animation-name: topic-anim;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      i {
+        font-size: 100px;
+        text-transform: uppercase;
+        color: $moon;
+        z-index: 500;
+      }
+    }
+    @keyframes topic-anim {
+      50% {
+        bottom: 150px;
+      }
+    }
+  }
+  .inform-box-1{
+    height: 100vh;
+    min-height: 1080px;
+    background-color: $just-black;
+  }
+  .inform-box-2{
+    height: 100vh;
+    min-height: 1080px;
+    background-image: url(../assets/images/sunset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    .dark-box{
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to bottom, $just-black 20%, $opacity-color);
+    }
+  }
+}
