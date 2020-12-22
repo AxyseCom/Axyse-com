@@ -7,8 +7,9 @@ module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: "development",
   entry: {
-    main: "./index.js",
+    main: ["@babel/polyfill","./index.js"],
     webscripts: "./script.js",
+    unshift: "webpack-dev-server/client?http://localhost:8484/",
   },
   output: {
     filename: "[name].[contenthash].js",
@@ -62,7 +63,36 @@ module.exports = {
           "sass-loader"
         ],       
       },
-
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', "@babel/react"]
+          }
+        }
+      },
       {
         test: /\.(png|jpg|svg|gif)$/,
         use: ["file-loader"],
