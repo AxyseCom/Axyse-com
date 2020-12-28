@@ -8,7 +8,6 @@ function App() {
         <Row>
           <Col>1</Col>
           <Col>2</Col>
-          <Col>3</Col>
         </Row>
       </Container>
     </>
