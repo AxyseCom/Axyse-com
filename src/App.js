@@ -1,14 +1,10 @@
 import React, { Component } from "react";
-import {Container, Row, Col} from "react-bootstrap";
+import Home from "./pages/Home"
 
 function App() {
   return (
     <>
-      <Container>
-        <Row>
-          <Col>1</Col>
-        </Row>
-      </Container>
+      <Home />
     </>
   );
 }

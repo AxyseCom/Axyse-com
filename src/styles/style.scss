@@ -1,5 +1,20 @@
-$hell: rgb(0, 194, 116);
+@import "../../node_modules/bootstrap/scss/bootstrap";
+$body-bg: #001122;
+$body-color: #111;
+$ice-light-color: #b1cfee;
+
 
 body{
-    background-color: $hell;
+    background-color: $body-bg;
+}
+header {
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inform-map{
+    height: 100vh;
+    width: 100%;
+    background-color: $ice-light-color;
 }
