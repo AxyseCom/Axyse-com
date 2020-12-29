@@ -2,20 +2,143 @@
 $body-bg: #001122;
 $body-color: #111;
 $ice-light-color: #b1cfee;
+$ice-font: #7aa5d5;
+$dark-ice-font: #215b8f;
 
-
-body{
-    background-color: $body-bg;
-    color: $body-color;
+body {
+  background-color: $body-bg;
+  color: $body-color;
 }
 header {
+  position: relative;
+  overflow: hidden;
+  .header {
+    position: relative;
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    z-index: 10000;
+  }
+  h1 {
+    margin: auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: $ice-font;
+    font-size: 300px;
+    z-index: 500;
+  }
+  .snow {
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    width: 5px;
+    box-shadow: 0 0 7px 4px white;
+    border-radius: 50%;
+    animation-name: blood-anim;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    @keyframes blood-anim {
+      99%{
+        opacity: 1;
+      }
+      100% {
+        top: 99%;
+        opacity: 0;
+        background-color: $ice-light-color;
+        box-shadow: 0 0 7px 4px $ice-light-color;
+      }
+    }
+    z-index: 10;
+  }
+
+  .uran-pos-box {
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    .planetBox {
+      display: inline-block;
+      position: relative;
+      .planetUr {
+        position: absolute;
+        top: 84px;
+        left: 130px;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(to top left, #7816dc, #3216dc, #1686dc);
+        border-radius: 50%;
+        box-shadow: 0 0 10px #17a6f0, inset 33px -16px 100px #3c023a;
+        z-index: 2;
+      }
+      @mixin ring-parameters-1 {
+        height: 36px;
+        width: 76px;
+        border-radius: 50%;
+        position: absolute;
+        top: 93px;
+        left: 120px;
+      }
+      .ring-one-front,
+      .ring-one-back {
+        @include ring-parameters-1;
+        border: 7px solid #a53fc3;
+        transform: skew(-70deg) scale(1.4);
+      }
+      .ring-one-front2,
+      .ring-one-back2 {
+        @include ring-parameters-1;
+        border: 6px solid #3fa4c3;
+        transform: skew(-70deg) scale(1.3);
+      }
+      .ring-one-front3,
+      .ring-one-back3 {
+        @include ring-parameters-1;
+        border: 4px solid #fdff8e;
+        transform: skew(-70deg) scale(1.2);
+      }
+
+      .ring-two-front,
+      .ring-two-back {
+        @include ring-parameters-1;
+        border: 4px solid #99079e;
+        transform: rotate(38deg) skew(67deg) scale(1.3);
+      }
+
+      .ring-three-front,
+      .ring-three-back {
+        @include ring-parameters-1;
+        border: 3px solid #e92d85;
+        transform: rotate(38deg) skew(67deg) scale(1.3);
+      }
+
+      .ring-one-front,
+      .ring-one-front2,
+      .ring-one-front3,
+      .ring-two-front,
+      .ring-three-front {
+        z-index: 3;
+        clip-path: inset(50% 0 0 0);
+      }
+
+      .ring-one-back,
+      .ring-one-back2,
+      .ring-one-back3,
+      .ring-two-back,
+      .ring-three-back {
+        z-index: 1;
+        clip-path: inset(0 0 50% 0);
+      }
+    }
+  }
 }
-.inform-map{
-    height: 100vh;
-    width: 100%;
-    background-color: $ice-light-color;
+
+.inform-map {
+  height: 100vh;
+  width: 100%;
+  background-color: $ice-light-color;
 }
