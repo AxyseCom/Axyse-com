@@ -1,4 +1,5 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 $body-bg: #001122;
 $body-color: #111;
 $ice-light-color: #b1cfee;
@@ -29,7 +30,8 @@ header {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: $ice-font;
-    font-size: 300px;
+    font-family: "Audiowide", cursive;
+    font-size: 250px;
     z-index: 500;
   }
   .snow {
@@ -44,7 +46,7 @@ header {
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     @keyframes blood-anim {
-      99%{
+      99% {
         opacity: 1;
       }
       100% {
