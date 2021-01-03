@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Space from "./Space"
+import Header from "./Header"
 
 
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <header>
-        <Space />
+        <Header />
       </header>
       <section className="inform-map"></section>
     </>
