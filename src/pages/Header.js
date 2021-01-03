@@ -3,7 +3,7 @@ import Snow from "./Snow";
 import img from "../assets/images/hill.svg";
 import logo from "../assets/images/axyse-logo-svg.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 const style = {
   backgroundImage: `url(${img})`,
@@ -61,6 +61,28 @@ export default class Space extends Component {
                 Россия
               </Link>
             </Nav.Link>
+            <NavDropdown title="Европа" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">
+                <Link
+                  activeClass="active"
+                  to="inform-map"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={1500}
+                >
+                  Россия
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar>
         <div className="header" onClick={this.mouseCoord} style={style}>
