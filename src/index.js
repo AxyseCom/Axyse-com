@@ -1,7 +1,7 @@
 import 'bootstrap/scss/bootstrap.scss';
 import "./styles/style.scss"
 import './styles/style.css'
-
+import "animate.css/animate.min.css";
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App.js';
