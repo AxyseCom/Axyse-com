@@ -18,19 +18,19 @@ export default class Space extends Component {
       x: 0,
       y: 0,
       items: [],
-      bgColor: '#001122',
+      bgColor: "#001122",
     };
   }
   scrollToTop() {
     scroll.scrollToTop();
     const block = document.getElementById("rus-block");
-    setTimeout(()=>{
-      block.style.display = "none"
-    }, 1000)
+    setTimeout(() => {
+      block.style.display = "none";
+    }, 1000);
   }
-  onRusBlock(){
+  onRusBlock() {
     const block = document.getElementById("rus-block");
-    block.style.display = "block"
+    block.style.display = "block";
   }
   mouseCoord(event) {
     this.setState({
@@ -42,24 +42,30 @@ export default class Space extends Component {
       this.state.items.length = 15;
     }
   }
-  listenScrollEvent(){
-    const block = document.getElementById("headerID")
-    const headerHeight = block.offsetHeight - 50
+  listenScrollEvent() {
+    const block = document.getElementById("headerID");
+    const headerHeight = block.offsetHeight - 50;
     if (window.scrollY > headerHeight) {
-      this.setState({bgColor: '#b1cfee'})
-    } else if(window.scrollY > 99){
-      this.setState({bgColor: "#11ffee00"})
-    }else {
-      this.setState({bgColor: '#001122'})
+      this.setState({ bgColor: "#b1cfee" });
+    } else if (window.scrollY > 99) {
+      this.setState({ bgColor: "#11ffee00" });
+    } else {
+      this.setState({ bgColor: "#001122" });
     }
   }
   componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
+    window.addEventListener("scroll", this.listenScrollEvent);
   }
   render() {
     return (
       <>
-        <Navbar className="navigation" style={{backgroundColor: this.state.bgColor}} fixed="top" variant="dark" expand="lg">
+        <Navbar
+          className="navigation"
+          style={{ backgroundColor: this.state.bgColor }}
+          fixed="top"
+          variant="dark"
+          expand="lg"
+        >
           <Navbar.Brand href="#home">
             <img
               src={logo}
@@ -87,7 +93,11 @@ export default class Space extends Component {
                   Россия
                 </Link>
               </Nav.Link>
-              <NavDropdown title="Европа" id="basic-nav-dropdown" renderMenuOnMount={true}>
+              <NavDropdown
+                title="Европа"
+                id="basic-nav-dropdown"
+                renderMenuOnMount={true}
+              >
                 <NavDropdown.Item href="#action/3.1">
                   <Link
                     activeClass="active"
@@ -103,7 +113,7 @@ export default class Space extends Component {
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                <Link
+                  <Link
                     activeClass="active"
                     to="russia-block"
                     spy={true}
@@ -119,7 +129,12 @@ export default class Space extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <div className="header" id="headerID" onClick={this.mouseCoord} style={style}>
+        <div
+          className="header"
+          id="headerID"
+          onClick={this.mouseCoord}
+          style={style}
+        >
           {this.state.items.map((item, index) => (
             <Snow key={index} coord={this.state}></Snow>
           ))}
