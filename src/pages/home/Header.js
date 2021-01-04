@@ -23,6 +23,10 @@ export default class Space extends Component {
   }
   scrollToTop() {
     scroll.scrollToTop();
+    const block = document.getElementById("rus-block");
+    setTimeout(()=>{
+      block.style.display = "none"
+    }, 1000)
   }
   onRusBlock(){
     const block = document.getElementById("rus-block");
