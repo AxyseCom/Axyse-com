@@ -43,7 +43,7 @@ export default class Space extends Component {
     const headerHeight = block.offsetHeight - 50
     if (window.scrollY > headerHeight) {
       this.setState({bgColor: '#b1cfee'})
-    } else if(window.scrollY > 100){
+    } else if(window.scrollY > 99){
       this.setState({bgColor: "#11ffee00"})
     }else {
       this.setState({bgColor: '#001122'})
@@ -83,29 +83,33 @@ export default class Space extends Component {
                   Россия
                 </Link>
               </Nav.Link>
-              <NavDropdown title="Европа" id="basic-nav-dropdown">
+              <NavDropdown title="Европа" id="basic-nav-dropdown" renderMenuOnMount={true}>
                 <NavDropdown.Item href="#action/3.1">
                   <Link
                     activeClass="active"
-                    to="inform-map"
+                    to="russia-block"
                     spy={true}
                     smooth={true}
                     offset={0}
                     duration={1500}
-                    
+                    onClick={this.onRusBlock}
                   >
                     Россия
                   </Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
-                  Separated link
+                <Link
+                    activeClass="active"
+                    to="russia-block"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={1500}
+                    onClick={this.onRusBlock}
+                  >
+                    Россия
+                  </Link>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>

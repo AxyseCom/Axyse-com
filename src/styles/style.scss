@@ -16,6 +16,7 @@ body {
     text-decoration: none;
   }
 }
+
 .navigation {
   background-color: $opacity;
   transition: background-color linear 0.5s;
@@ -35,7 +36,11 @@ body {
       a{
         color: $ice-font;
       }
+      &:hover .dropdown-menu {
+      display: block; 
+     } 
     }
+    
   }
 }
 
@@ -179,6 +184,10 @@ header {
       }
     }
   }
+}
+
+footer {
+  height: 100px;
 }
 
 .russia-block {
