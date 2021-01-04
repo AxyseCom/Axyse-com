@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
 $body-bg: #001122;
+$opacity: #11ffee00;
 $body-color: #111;
 $ice-light-color: #b1cfee;
 $ice-font: #7aa5d5;
@@ -16,7 +17,8 @@ body {
   }
 }
 .navigation {
-  background-color: $body-bg;
+  background-color: $opacity;
+  transition: background-color linear 0.5s;
   .mr-auto {
     a {
       font-size: 25px;
@@ -179,7 +181,8 @@ header {
   }
 }
 
-.inform-map {
+.russia-block {
+  display: none;
   height: 100vh;
   width: 100%;
   background-color: $ice-light-color;

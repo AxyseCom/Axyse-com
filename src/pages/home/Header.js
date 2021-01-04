@@ -13,14 +13,20 @@ export default class Space extends Component {
   constructor(props) {
     super(props);
     this.mouseCoord = this.mouseCoord.bind(this);
+    this.listenScrollEvent = this.listenScrollEvent.bind(this);
     this.state = {
       x: 0,
       y: 0,
       items: [],
+      bgColor: '#001122',
     };
   }
   scrollToTop() {
     scroll.scrollToTop();
+  }
+  onRusBlock(){
+    const block = document.getElementById("rus-block");
+    block.style.display = "block"
   }
   mouseCoord(event) {
     this.setState({
@@ -31,12 +37,25 @@ export default class Space extends Component {
     if (this.state.items > 15) {
       this.state.items.length = 15;
     }
-    console.log(this.state.items.length);
+  }
+  listenScrollEvent(){
+    const block = document.getElementById("headerID")
+    const headerHeight = block.offsetHeight - 50
+    if (window.scrollY > headerHeight) {
+      this.setState({bgColor: '#b1cfee'})
+    } else if(window.scrollY > 100){
+      this.setState({bgColor: "#11ffee00"})
+    }else {
+      this.setState({bgColor: '#001122'})
+    }
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
   }
   render() {
     return (
       <>
-        <Navbar className="navigation" fixed="top" variant="dark" expand="lg">
+        <Navbar className="navigation" style={{backgroundColor: this.state.bgColor}} fixed="top" variant="dark" expand="lg">
           <Navbar.Brand href="#home">
             <img
               src={logo}
@@ -54,11 +73,12 @@ export default class Space extends Component {
               <Nav.Link href="#home" style={style.link}>
                 <Link
                   activeClass="active"
-                  to="inform-map"
+                  to="russia-block"
                   spy={true}
                   smooth={true}
                   offset={0}
                   duration={1500}
+                  onClick={this.onRusBlock}
                 >
                   Россия
                 </Link>
@@ -72,6 +92,7 @@ export default class Space extends Component {
                     smooth={true}
                     offset={0}
                     duration={1500}
+                    
                   >
                     Россия
                   </Link>
@@ -90,7 +111,7 @@ export default class Space extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <div className="header" onClick={this.mouseCoord} style={style}>
+        <div className="header" id="headerID" onClick={this.mouseCoord} style={style}>
           {this.state.items.map((item, index) => (
             <Snow key={index} coord={this.state}></Snow>
           ))}

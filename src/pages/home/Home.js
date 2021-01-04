@@ -7,9 +7,12 @@ export default function Home() {
       <header>
         <Header />
       </header>
-      <section className="inform-map">
+      <section className="russia-block" id="rus-block">
         
       </section>
+      <footer>
+        <h3>lolec</h3>
+      </footer>
     </>
   );
 }
