@@ -38,9 +38,6 @@ export default class Space extends Component {
       y: event.pageY,
       items: [...this.state.items, this.state.x],
     });
-    if (this.state.items > 15) {
-      this.state.items.length = 15;
-    }
   }
   listenScrollEvent() {
     const block = document.getElementById("headerID");
