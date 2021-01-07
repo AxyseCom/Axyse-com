@@ -7,7 +7,7 @@ $body-color: #111;
 $ice-light-color: #b1cfee;
 $ice-font: #7aa5d5;
 $dark-ice-font: #215b8f;
-$orange: #fd5000;
+$orange: #ff6823;
 
 body {
   background-color: $body-bg;
@@ -32,15 +32,14 @@ body {
         text-decoration: none;
       }
     }
-    .dropdown{
-      a{
+    .dropdown {
+      a {
         color: $ice-font;
       }
       &:hover .dropdown-menu {
-      display: block; 
-     } 
+        display: block;
+      }
     }
-    
   }
 }
 
@@ -55,7 +54,7 @@ header {
     background-size: cover;
     background-position: center;
     z-index: 1000;
-  } 
+  }
   h1 {
     margin: auto;
     position: absolute;
@@ -192,7 +191,38 @@ footer {
 
 .russia-block {
   display: none;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: $ice-light-color;
+  text-align: center;
+  h3 {
+    display: inline-block;
+    margin-top: 150px;
+    font-family: "Comfortaa", cursive;
+    font-size: 70px;
+  }
+
+  .resort {
+    height: 300px;
+    margin-top: 50px;
+    word-wrap: normal;
+    &:first-child {
+      margin-top: 70px;
+    }
+    a {
+      display: inline-block;
+      border: none;
+      padding: 0;
+      text-decoration: none;
+      height: 100%;
+      width: 100%;
+      text-align: left;
+      h4 {
+        color: $orange;
+        font-family: "Comfortaa", cursive;
+        font-size: 70px;
+        text-transform: uppercase;
+      }
+    }
+  }
 }

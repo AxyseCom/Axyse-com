@@ -94,9 +94,9 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|jpg|svg|gif)$/,
-        use: ["file-loader"],
-      },
+        test: /\.(gif|svg|jpg|png)$/,
+        loader: "file-loader",
+    },
     ],
   },
 };
