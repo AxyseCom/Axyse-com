@@ -227,9 +227,24 @@ footer {
     }
   }
 }
+
+//        /\
+//       /  \
+//      /    \
+//     /_    _\
+//      /    \
+//     /      \
+//    /        \
+//   /_        _\
+//    /        \
+//   /          \
+//  /    404     \
+// /______________\
+//       |  |
+
 .not-found-page {
   display: block;
-  background-color: $cosmo-color;
+  background-color: $body-bg;
   height: 100vh;
   text-align: center;
   overflow: hidden;
@@ -252,7 +267,7 @@ footer {
       top: -150px;
       left: 50px;
       transform: rotate(20deg);
-      color: #ffbafc;
+      color: $ice-light-color;
 
       h1 {
         font-size: 100px;
@@ -263,9 +278,9 @@ footer {
       height: 300px;
       width: 300px;
       border-radius: 50%;
-      border: 10px solid rgb(255, 186, 252);
-      box-shadow: 0 0 80px 20px rgb(255, 93, 247),
-        0 0 80px 5px rgb(255, 93, 247) inset;
+      border: 10px solid $ice-light-color;
+      box-shadow: 0 0 80px 20px $ice-light-color,
+        0 0 80px 5px $ice-light-color inset;
     }
     .left-ear1 {
       position: absolute;
@@ -274,9 +289,9 @@ footer {
       left: -55px;
       height: 10px;
       width: 130px;
-      background-color: rgb(255, 186, 252);
+      background-color: $ice-light-color;
       transform: rotate(72deg);
-      box-shadow: 0 0 53px 2px rgb(255, 93, 247);
+      box-shadow: 0 0 53px 2px $ice-light-color;
     }
     .left-ear2 {
       position: absolute;
@@ -285,9 +300,9 @@ footer {
       left: -22px;
       height: 10px;
       width: 130px;
-      background-color: rgb(255, 186, 252);
+      background-color: $ice-light-color;
       transform: rotate(32deg);
-      box-shadow: 0 0 53px 2px rgb(255, 93, 247);
+      box-shadow: 0 0 53px 2px $ice-light-color;
     }
     .right-ear1 {
       position: absolute;
@@ -296,9 +311,9 @@ footer {
       left: 200px;
       height: 10px;
       width: 100px;
-      background-color: rgb(255, 186, 252);
+      background-color: $ice-light-color;
       transform: rotate(141deg);
-      box-shadow: 0 0 53px 2px rgb(255, 93, 247);
+      box-shadow: 0 0 53px 2px $ice-light-color;
     }
     .right-ear2 {
       position: absolute;
@@ -307,9 +322,9 @@ footer {
       left: 222px;
       height: 10px;
       width: 120px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(96deg);
-      box-shadow: 0 0 53px 2px rgb(255, 93, 247);
+      box-shadow: 0 0 53px 2px $ice-light-color;
     }
     .left-eye {
       position: absolute;
@@ -319,9 +334,9 @@ footer {
       height: 100px;
       width: 100px;
       border-radius: 50%;
-      border: 10px solid rgb(255, 186, 252);
-      box-shadow: 0 0 53px 9px rgb(255, 93, 247),
-        0 0 53px 2px rgb(255, 93, 247) inset;
+      border: 10px solid $ice-light-color;
+      box-shadow: 0 0 53px 9px $ice-light-color,
+        0 0 53px 2px $ice-light-color inset;
       animation-name: eye1;
       animation-duration: 2s;
       animation-iteration-count: infinite;
@@ -335,9 +350,9 @@ footer {
       height: 100px;
       width: 100px;
       border-radius: 50%;
-      border: 10px solid rgb(255, 186, 252);
-      box-shadow: 0 0 53px 9px rgb(255, 93, 247),
-        0 0 53px 2px rgb(255, 93, 247) inset;
+      border: 10px solid $ice-light-color;
+      box-shadow: 0 0 53px 9px $ice-light-color,
+        0 0 53px 2px $ice-light-color inset;
       animation-name: eye2;
       animation-duration: 2s;
       animation-iteration-count: infinite;
@@ -391,9 +406,9 @@ footer {
       height: 30px;
       width: 30px;
       border-radius: 50%;
-      border: 10px solid rgb(255, 186, 252);
-      box-shadow: 0 0 53px 9px rgb(255, 93, 247),
-        0 0 53px 2px rgb(255, 93, 247) inset;
+      border: 10px solid $ice-light-color;
+      box-shadow: 0 0 53px 9px $ice-light-color,
+        0 0 53px 2px $ice-light-color inset;
     }
     .mouth1 {
       position: absolute;
@@ -402,10 +417,10 @@ footer {
       left: 140px;
       height: 10px;
       width: 24px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(90deg);
       z-index: 2;
-      box-shadow: 0 0 53px 9px rgb(255, 93, 247);
+      box-shadow: 0 0 53px 9px $ice-light-color;
     }
     .mouth2 {
       position: absolute;
@@ -414,7 +429,7 @@ footer {
       left: 145px;
       height: 10px;
       width: 44px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(38deg);
       border-top-left-radius: 50%;
       border-top-right-radius: 50%;
@@ -428,7 +443,7 @@ footer {
       left: 115px;
       height: 10px;
       width: 44px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(141deg);
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -441,7 +456,7 @@ footer {
       left: -46px;
       height: 3px;
       width: 142px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(178deg);
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -454,7 +469,7 @@ footer {
       left: -65px;
       height: 3px;
       width: 160px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(172deg);
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -467,7 +482,7 @@ footer {
       left: -43px;
       height: 3px;
       width: 142px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(161deg);
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -480,7 +495,7 @@ footer {
       left: 216px;
       height: 3px;
       width: 142px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(4deg);
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -493,7 +508,7 @@ footer {
       left: 213px;
       height: 3px;
       width: 166px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(9deg);
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
@@ -506,7 +521,7 @@ footer {
       left: 213px;
       height: 3px;
       width: 155px;
-      background-color: #ffbafc;
+      background-color: $ice-light-color;
       transform: rotate(15deg);
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
