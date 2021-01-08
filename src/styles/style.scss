@@ -254,7 +254,6 @@ footer {
     height: 100%;
     vertical-align: middle;
   }
-
   .error-logo {
     position: relative;
     display: inline-block;
@@ -341,6 +340,13 @@ footer {
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function: ease;
+      overflow: hidden;
+      a{
+        margin-top: 2px;
+        img{
+          margin-left: -5px;
+        }
+      }
     }
     .right-eye {
       position: absolute;
@@ -357,6 +363,13 @@ footer {
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-timing-function: ease;
+      overflow: hidden;
+      a{
+        margin-top: 2px;
+        img{
+          margin-left: -5px;
+        }
+      }
     }
     @keyframes eye1 {
       10% {
