@@ -14,6 +14,7 @@ module.exports = {
   output: {
     filename: "[name].[contenthash].js",
     path: path.resolve(__dirname, "public"),
+    publicPath: '/'
   },
   resolve: {
     extensions: [".js", ".json"],
@@ -22,6 +23,7 @@ module.exports = {
   devServer: {
     port: 8484,
     open: true,
+    historyApiFallback: true,
   },
   plugins: [
     new HTMLWebpackPlugin({
