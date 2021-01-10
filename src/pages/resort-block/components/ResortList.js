@@ -8,7 +8,7 @@ export default function ResortList(props) {
           {props.resorts.map((resort) => {
             return (
               <Col md={12} className="resort" style={resort.bg}>
-                <a href="/hybini">
+                <a href="/resort">
                   <h4>{resort.title}</h4>
                 </a>
               </Col>

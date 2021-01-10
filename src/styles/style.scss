@@ -190,7 +190,7 @@ footer {
   height: 100px;
 }
 
-.russia-block {
+.resort-block {
   display: none;
   min-height: 100vh;
   width: 100%;
@@ -209,6 +209,9 @@ footer {
     word-wrap: normal;
     &:first-child {
       margin-top: 70px;
+    }
+    &:last-child{
+      margin-bottom: 50px;
     }
     a {
       display: inline-block;

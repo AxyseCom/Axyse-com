@@ -1,25 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from "react";
 
-export default class Snow extends Component{
-    constructor(props){
-        super(props)
-        const coord = this.props.coord
-        this.state = {
-            x: coord.x,
-            y: coord.y,
-        }
-        
-    }
-    render(){
-        
-        return(
-            <div style={
-                {         
-                 left: this.state.x,
-                 top: this.state.y
-                }
-            } id={this.state.x}
-            className={"snow"}></div>
-        )
-    }
+export default function Snow(props) {
+  const [x, setX] = useState(props.coord.x);
+  const [y, setY] = useState(props.coord.y);
+  return (
+    <div
+      style={{ left: x, top: y}}
+      id={x + y}
+      className={"snow"}
+    ></div>
+  );
 }

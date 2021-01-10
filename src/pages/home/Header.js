@@ -23,13 +23,13 @@ export default class Space extends Component {
   }
   scrollToTop() {
     scroll.scrollToTop();
-    const block = document.getElementById("rus-block");
+    const block = document.getElementById("res-block");
     setTimeout(() => {
       block.style.display = "none";
     }, 1000);
   }
   onRusBlock() {
-    const block = document.getElementById("rus-block");
+    const block = document.getElementById("res-block");
     block.style.display = "block";
   }
   mouseCoord(event) {
@@ -80,7 +80,7 @@ export default class Space extends Component {
               <Nav.Link href="#home" style={style.link}>
                 <Link
                   activeClass="active"
-                  to="russia-block"
+                  to="resort-block"
                   spy={true}
                   smooth={true}
                   offset={0}
@@ -98,7 +98,7 @@ export default class Space extends Component {
                 <NavDropdown.Item href="#action/3.1">
                   <Link
                     activeClass="active"
-                    to="russia-block"
+                    to="resort-block"
                     spy={true}
                     smooth={true}
                     offset={0}
@@ -112,7 +112,7 @@ export default class Space extends Component {
                 <NavDropdown.Item href="#action/3.4">
                   <Link
                     activeClass="active"
-                    to="russia-block"
+                    to="resort-block"
                     spy={true}
                     smooth={true}
                     offset={0}
