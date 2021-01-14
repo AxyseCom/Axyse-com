@@ -203,16 +203,33 @@ footer {
     font-size: 70px;
   }
 
+  .card{
+    border: none;
+    .collapse {
+      height:300px;
+      transition: height 0.5s ease-in-out;
+    }
+  }
+
   .resort {
     height: 300px;
-    margin-top: 50px;
-    word-wrap: normal;
-    &:first-child {
-      margin-top: 70px;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    button {
+      height: 100%;
+      width: 100%;
+      color: $orange;
+      text-transform: uppercase;
+      font-family: "Comfortaa", cursive;
+      font-size: 5rem;
+      &:hover{
+        text-decoration: none;
+        color: $ice-font;
+      }
     }
-    &:last-child{
-      margin-bottom: 50px;
-    }
+    
     a {
       display: inline-block;
       border: none;

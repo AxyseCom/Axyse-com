@@ -1,21 +1,29 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Accordion, Card, Button } from "react-bootstrap";
+import Resort from "./Resort.js";
 export default function ResortList(props) {
   return (
     <>
-      <Container>
-        <Row>
-          {props.resorts.map((resort) => {
-            return (
-              <Col md={12} className="resort" style={resort.bg}>
-                <a href="/resort">
-                  <h4>{resort.title}</h4>
-                </a>
-              </Col>
-            );
-          })}
-        </Row>
-      </Container>
+      <Accordion>
+        {props.resorts.map((resort) => {
+          return (
+            <Card>
+              <Card.Header className="resort" style={resort.bg}>
+                <Accordion.Toggle
+                  as={Button}
+                  variant="link"
+                  eventKey={resort.id}
+                >
+                  {resort.title}
+                </Accordion.Toggle>
+              </Card.Header>
+              <Accordion.Collapse eventKey={resort.id}>
+                <Resort />
+              </Accordion.Collapse>
+            </Card>
+          );
+        })}
+      </Accordion>
     </>
   );
 }

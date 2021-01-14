@@ -21,10 +21,11 @@ export default class ResortBlock extends Component {
       { id: 1, title: "хибины", bg: backgroundImg[0] },
       { id: 2, title: "красная поляна", bg: backgroundImg[1] },
       { id: 3, title: "шерегеш", bg: backgroundImg[1] },
+      { id: 4, title: "шерегеш", bg: backgroundImg[1] },
     ];
     return (
       <section className="resort-block" id="res-block">
-        <h3>Россия</h3>
+        <h3>{this.props.data}</h3>
             <ResortList resorts={resorts} />
       </section>
     );

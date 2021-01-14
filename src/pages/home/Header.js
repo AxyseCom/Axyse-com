@@ -9,16 +9,18 @@ const style = {
   backgroundImage: `url(${img})`,
 };
 
-export default class Space extends Component {
+export default class Header1 extends Component {
   constructor(props) {
     super(props);
     this.mouseCoord = this.mouseCoord.bind(this);
     this.listenScrollEvent = this.listenScrollEvent.bind(this);
+    this.onResBlock = this.onResBlock.bind(this);
     this.state = {
       x: 0,
       y: 0,
       items: [],
       bgColor: "#001122",
+      idResort: "",
     };
   }
   scrollToTop() {
@@ -28,9 +30,11 @@ export default class Space extends Component {
       block.style.display = "none";
     }, 1000);
   }
-  onRusBlock() {
+  async onResBlock(event, parametr) {
     const block = document.getElementById("res-block");
     block.style.display = "block";
+    await this.setState({ idResort: parametr });
+    this.props.update(this.state.idResort);
   }
   mouseCoord(event) {
     this.setState({
@@ -85,7 +89,9 @@ export default class Space extends Component {
                   smooth={true}
                   offset={0}
                   duration={1500}
-                  onClick={this.onRusBlock}
+                  onClick={(e) => {
+                    this.onResBlock(e, "Россия");
+                  }}
                 >
                   Россия
                 </Link>
@@ -103,9 +109,11 @@ export default class Space extends Component {
                     smooth={true}
                     offset={0}
                     duration={1500}
-                    onClick={this.onRusBlock}
+                    onClick={(e) => {
+                      this.onResBlock(e, "Франция");
+                    }}
                   >
-                    Россия
+                    Франция
                   </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -117,9 +125,11 @@ export default class Space extends Component {
                     smooth={true}
                     offset={0}
                     duration={1500}
-                    onClick={this.onRusBlock}
+                    onClick={(e) => {
+                      this.onResBlock(e, "США");
+                    }}
                   >
-                    Россия
+                    США
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>
