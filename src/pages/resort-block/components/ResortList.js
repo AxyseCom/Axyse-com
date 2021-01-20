@@ -8,7 +8,12 @@ export default function ResortList(props) {
         {props.resorts.map((resort) => {
           return (
             <Card>
-              <Card.Header className="resort" style={resort.bg}>
+              <Card.Header
+                className="resort"
+                style={{
+                  backgroundImage: `url(${resort.bg})`,
+                }}
+              >
                 <Accordion.Toggle
                   as={Button}
                   variant="link"

@@ -1,32 +1,18 @@
 import React, { Component } from "react";
 import ResortList from "./components/ResortList";
-import hybini from "./assets/img/hybini.png";
-import krasnaya from "./assets/img/krasnaya.png";
+import resortDATA from "./assets/json/resorts.json";
 
 export default class ResortBlock extends Component {
   constructor(props) {
     super(props);
+
   }
   render() {
-    const backgroundImg = [
-      {
-        backgroundImage: `url(${hybini})`,
-      },
-      {
-        backgroundImage: `url(${krasnaya})`,
-
-      },
-    ];
-    const resorts = [
-      { id: 1, title: "хибины", bg: backgroundImg[0] },
-      { id: 2, title: "красная поляна", bg: backgroundImg[1] },
-      { id: 3, title: "шерегеш", bg: backgroundImg[1] },
-      { id: 4, title: "шерегеш", bg: backgroundImg[1] },
-    ];
+    const resorts = resortDATA.russia;
     return (
       <section className="resort-block" id="res-block">
         <h3>{this.props.data}</h3>
-            <ResortList resorts={resorts} />
+        <ResortList resorts={resorts} />
       </section>
     );
   }

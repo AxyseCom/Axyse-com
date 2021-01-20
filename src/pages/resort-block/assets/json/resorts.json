@@ -1,0 +1,36 @@
+{
+  "russia": [
+    {
+      "id": 1,
+      "title": "хибины",
+      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+    },
+    {
+      "id": 2,
+      "title": "роза",
+      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+    },
+    {
+      "id": 3,
+      "title": "хибины",
+      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+    },
+    {
+      "id": 4,
+      "title": "хибины",
+      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+    }
+  ],
+  "france": [
+    {
+      "id": 1,
+      "title": "шамене",
+      "bg": "./src/pages/resort-block/assets/img/krasnaya.png"
+    },
+    {
+      "id": 1,
+      "title": "розэре",
+      "bg": "./src/pages/resort-block/assets/img/krasnaya.png"
+    }
+  ]
+}
