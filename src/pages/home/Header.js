@@ -21,6 +21,7 @@ export default class Header1 extends Component {
       items: [],
       bgColor: "#001122",
       idResort: "",
+      country: "",
     };
   }
   scrollToTop() {
@@ -30,11 +31,11 @@ export default class Header1 extends Component {
       block.style.display = "none";
     }, 1000);
   }
-  async onResBlock(event, parametr) {
+  async onResBlock(event, id, country) {
     const block = document.getElementById("res-block");
     block.style.display = "block";
-    await this.setState({ idResort: parametr });
-    this.props.update(this.state.idResort);
+    await this.setState({ idResort: id, country: country });
+    this.props.update(this.state.idResort, this.state.country);
   }
   mouseCoord(event) {
     this.setState({
@@ -90,7 +91,7 @@ export default class Header1 extends Component {
                   offset={0}
                   duration={1500}
                   onClick={(e) => {
-                    this.onResBlock(e, "Россия");
+                    this.onResBlock(e, "Россия", "russia");
                   }}
                 >
                   Россия
@@ -110,7 +111,7 @@ export default class Header1 extends Component {
                     offset={0}
                     duration={1500}
                     onClick={(e) => {
-                      this.onResBlock(e, "Франция");
+                      this.onResBlock(e, "Франция", "france");
                     }}
                   >
                     Франция

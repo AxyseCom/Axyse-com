@@ -7,12 +7,13 @@ export default class Home extends Component {
     super(props);
     this.update = this.update.bind(this);
     this.state = {
-      data: "",
+      country: "",
+      countryDATA: ""
     };
   }
 
-  update(value) {
-    this.setState({ data: value });
+  update(value1, value2) {
+    this.setState({ country: value1, countryDATA: value2 });
   }
   render() {
     return (
@@ -20,7 +21,7 @@ export default class Home extends Component {
         <header>
           <Header update={this.update} />
         </header>
-        <ResortBlock data={this.state.data}/>
+        <ResortBlock country={this.state.country} countryDATA={this.state.countryDATA}/>
         <footer>
           <h3>lolec</h3>
         </footer>

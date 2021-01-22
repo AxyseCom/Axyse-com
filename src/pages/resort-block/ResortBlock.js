@@ -5,14 +5,29 @@ import resortDATA from "./assets/json/resorts.json";
 export default class ResortBlock extends Component {
   constructor(props) {
     super(props);
-
+    this.getResortList= this.getResortList.bind(this)
+    this.state = {
+      country: resortDATA
+    };
   }
+
+  getResortList() {
+    switch (this.props.countryDATA) {
+      case "russia": {
+        return <ResortList resorts={this.state.country.russia} />;
+      }
+      case "france": {
+        return <ResortList resorts={this.state.country.france} />;
+      }
+    }
+  }
+
   render() {
-    const resorts = resortDATA.russia;
+    const resorts = resortDATA;
     return (
       <section className="resort-block" id="res-block">
-        <h3>{this.props.data}</h3>
-        <ResortList resorts={resorts} />
+        <h3>{this.props.country}</h3>
+        {this.getResortList()}
       </section>
     );
   }
