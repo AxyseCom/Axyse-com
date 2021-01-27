@@ -8,7 +8,16 @@ export default class Resort extends Component {
   render() {
     return (
       <>   
-          <Card.Body></Card.Body>      
+          <Card.Body>
+            <ul>
+              <li><h4>рейтинг</h4>&nbsp;&nbsp;{this.props.data.skipass.day1}</li>
+              <li><h4>рейтинг</h4>&nbsp;&nbsp;{this.props.data.skipass.day1}</li>
+              <li><h4>рейтинг</h4>&nbsp;&nbsp;{this.props.data.skipass.day1}</li>
+              <li><h4>рейтинг</h4>&nbsp;&nbsp;{this.props.data.skipass.day1}</li>
+            </ul>
+                
+                
+          </Card.Body>      
       </>
     );
   }

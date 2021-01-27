@@ -3,34 +3,76 @@
     {
       "id": 1,
       "title": "хибины",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+      "bg": "./src/pages/resort-block/assets/img/hybini.png",
+      "data": {
+        "title": "big wood",
+        "skipass": {
+          "day1": 1000,
+          "day2": 2000
+        }
+      }
     },
     {
       "id": 2,
       "title": "роза",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+      "bg": "./src/pages/resort-block/assets/img/hybini.png",
+      "data": {
+        "title": "хибины",
+        "skipass": {
+          "day1": 1000,
+          "day2": 2000
+        }
+      }
     },
     {
       "id": 3,
       "title": "хибины",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+      "bg": "./src/pages/resort-block/assets/img/hybini.png",
+      "data": {
+        "title": "хибины",
+        "skipass": {
+          "day1": 1000,
+          "day2": 2000
+        }
+      }
     },
     {
       "id": 4,
       "title": "хибины",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png"
+      "bg": "./src/pages/resort-block/assets/img/hybini.png",
+      "data": {
+        "title": "хибины",
+        "skipass": {
+          "day1": 1000,
+          "day2": 2000
+        }
+      }
     }
   ],
   "france": [
     {
       "id": 1,
-      "title": "шамене",
-      "bg": "./src/pages/resort-block/assets/img/krasnaya.png"
+      "title": "хибины",
+      "bg": "./src/pages/resort-block/assets/img/hybini.png",
+      "data": {
+        "title": "хибины",
+        "skipass": {
+          "day1": 1000,
+          "day2": 2000
+        }
+      }
     },
     {
       "id": 2,
-      "title": "розэре",
-      "bg": "./src/pages/resort-block/assets/img/krasnaya.png"
+      "title": "хибины",
+      "bg": "./src/pages/resort-block/assets/img/hybini.png",
+      "data": {
+        "title": "хибины",
+        "skipass": {
+          "day1": 1000,
+          "day2": 2000
+        }
+      }
     }
   ]
 }

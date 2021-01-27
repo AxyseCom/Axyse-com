@@ -49,17 +49,25 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {publicPath: path.resolve(__dirname, 'public') },
+            options: {
+              publicPath: (resourcePath, context) => {
+                return path.relative(path.dirname(resourcePath), context) + '/';
+              },
+            },
           },
-          "css-loader",
-        ],      
+          'css-loader',
+        ],
       },
       {
         test: /\.s[ac]ss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {publicPath: path.resolve(__dirname, 'public') },
+            options: {
+              publicPath: (resourcePath, context) => {
+                return path.relative(path.dirname(resourcePath), context) + '/';
+              },
+            },
           },
           "css-loader",
           "sass-loader"

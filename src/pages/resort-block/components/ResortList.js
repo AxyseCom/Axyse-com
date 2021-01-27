@@ -23,7 +23,7 @@ export default function ResortList(props) {
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey={resort.id}>
-                <Resort />
+                <Resort data={resort.data}/>
               </Accordion.Collapse>
             </Card>
           );

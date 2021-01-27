@@ -208,43 +208,60 @@ footer {
     transition: height 0.5s ease-in-out;
     overflow: hidden;
     .collapse {
-      height:300px;
-      transition: height 0.5s ease-in-out;
+      height: 700px;
+      transition: height 1s ease-in-out;
+      li{
+        height: 150px;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 40px;
+        
+        h4{
+          font-size: 60px;
+        }
+      }
+      li:first-child{
+        margin-top: 70px;
+      }
     }
   }
 
-  .resort {
-    height: 300px;
-    width: 100%;
-    margin: auto;
-    background-size: cover;
-    background-position: center;
-    button {
-      height: 100%;
+  .accordion {
+    .resort {
+      height: 300px;
       width: 100%;
-      color: $orange;
-      text-transform: uppercase;
-      font-family: "Comfortaa", cursive;
-      font-size: 5rem;
-      &:hover{
-        text-decoration: none;
-        color: $ice-font;
-      }
-    }
-    
-    a {
-      display: inline-block;
-      border: none;
-      padding: 0;
-      text-decoration: none;
-      height: 100%;
-      width: 100%;
-      text-align: left;
-      h4 {
+      margin: auto;
+      background-size: cover;
+      background-position: left;
+      background-color: $ice-light-color;
+      button {
+        height: 100%;
+        width: 100%;
         color: $orange;
-        font-family: "Comfortaa", cursive;
-        font-size: 70px;
         text-transform: uppercase;
+        font-family: "Comfortaa", cursive;
+        font-size: 5rem;
+        text-align: left;
+        &:hover{
+          text-decoration: none;
+          color: $ice-font;
+        }
+      }
+      
+      a {
+        display: inline-block;
+        border: none;
+        padding: 0;
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        h4 {
+          color: $orange;
+          font-family: "Comfortaa", cursive;
+          font-size: 70px;
+          text-transform: uppercase;
+        }
       }
     }
   }
