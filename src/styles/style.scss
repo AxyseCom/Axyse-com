@@ -209,15 +209,21 @@ footer {
     overflow: hidden;
     .collapse {
       height: 700px;
+      background-color: $ice-light-color;
       transition: height 1s ease-in-out;
       li{
         height: 150px;
+        margin-top: 1px;
         list-style-type: none;
+        color: $orange;
         text-transform: uppercase;
+        font-family: "Comfortaa", cursive;
         font-size: 40px;
         
         h4{
-          font-size: 60px;
+          color: $dark-ice-font;
+          font-family: "Comfortaa", cursive;
+          font-size: 40px;
         }
       }
       li:first-child{

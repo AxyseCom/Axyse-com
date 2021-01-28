@@ -4,48 +4,25 @@
       "id": 1,
       "title": "хибины",
       "bg": "./src/pages/resort-block/assets/img/hybini.png",
-      "data": {
+      "resort": {
         "title": "big wood",
-        "skipass": {
-          "day1": 1000,
-          "day2": 2000
-        }
-      }
-    },
-    {
-      "id": 2,
-      "title": "роза",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png",
-      "data": {
-        "title": "хибины",
-        "skipass": {
-          "day1": 1000,
-          "day2": 2000
-        }
-      }
-    },
-    {
-      "id": 3,
-      "title": "хибины",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png",
-      "data": {
-        "title": "хибины",
-        "skipass": {
-          "day1": 1000,
-          "day2": 2000
-        }
-      }
-    },
-    {
-      "id": 4,
-      "title": "хибины",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png",
-      "data": {
-        "title": "хибины",
-        "skipass": {
-          "day1": 1000,
-          "day2": 2000
-        }
+        "rating": [
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star",
+          "far fa-star"
+        ],
+        "travel":[
+          "fas fa-train",
+          "fas fa-plane",
+          "fas fa-car"
+      ],
+      "skipass": [
+        {"dayNumber": "1 день", "adultDay": 1450, "childDay": 1200, "currency": "руб"},
+        {"dayNumber": "2 дня", "adultDay": 2600, "childDay": 2100, "currency": "руб"},
+        {"dayNumber": "3 дня", "adultDay": 3500, "childDay": 2800, "currency": "руб"}
+      ]
       }
     }
   ],
@@ -56,10 +33,10 @@
       "bg": "./src/pages/resort-block/assets/img/hybini.png",
       "data": {
         "title": "хибины",
-        "skipass": {
-          "day1": 1000,
-          "day2": 2000
-        }
+        "skipass": [
+          {"adultDay1": 1000},
+          {"day2": 2000}
+        ]
       }
     },
     {
