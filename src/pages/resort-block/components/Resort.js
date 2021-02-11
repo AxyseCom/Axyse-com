@@ -43,7 +43,7 @@ export default class Resort extends Component {
               })}
             </li>
             <li>
-              <h4>Цены на skipass</h4>
+              <h4>цены на skipass</h4>
               <h5>
                 {this.state.day}
                 &nbsp;
