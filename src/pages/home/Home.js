@@ -23,7 +23,7 @@ export default class Home extends Component {
         </header>
         <ResortBlock country={this.state.country} countryDATA={this.state.countryDATA}/>
         <footer>
-          <h3>lolec</h3>
+          
         </footer>
       </>
     );

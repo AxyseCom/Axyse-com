@@ -16,6 +16,11 @@ body {
   a {
     text-decoration: none;
   }
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .navigation {
@@ -203,7 +208,7 @@ footer {
     font-size: 70px;
   }
 
-  .card{
+  .card {
     border: none;
     transition: height 0.5s ease-in-out;
     overflow: hidden;
@@ -211,7 +216,7 @@ footer {
       height: 700px;
       background-color: $ice-light-color;
       transition: height 1s ease-in-out;
-      li{
+      li {
         height: 150px;
         margin-top: 1px;
         list-style-type: none;
@@ -219,14 +224,14 @@ footer {
         text-transform: uppercase;
         font-family: "Comfortaa", cursive;
         font-size: 40px;
-        
-        h4{
+
+        h4 {
           color: $dark-ice-font;
           font-family: "Comfortaa", cursive;
           font-size: 40px;
         }
       }
-      li:first-child{
+      li:first-child {
         margin-top: 70px;
       }
     }
@@ -248,12 +253,12 @@ footer {
         font-family: "Comfortaa", cursive;
         font-size: 5rem;
         text-align: left;
-        &:hover{
+        &:hover {
           text-decoration: none;
           color: $ice-font;
         }
       }
-      
+
       a {
         display: inline-block;
         border: none;
@@ -268,6 +273,16 @@ footer {
           font-size: 70px;
           text-transform: uppercase;
         }
+      }
+    }
+    .MuiButtonGroup-root {
+      display: block;
+      text-align: center;
+      button {
+        height: 70px;
+        width: 70px;
+        margin: 1px;
+        border: 2px solid $dark-ice-font;
       }
     }
   }
@@ -386,9 +401,9 @@ footer {
       animation-iteration-count: infinite;
       animation-timing-function: ease;
       overflow: hidden;
-      a{
+      a {
         margin-top: 2px;
-        img{
+        img {
           margin-left: -5px;
         }
       }
@@ -409,9 +424,9 @@ footer {
       animation-iteration-count: infinite;
       animation-timing-function: ease;
       overflow: hidden;
-      a{
+      a {
         margin-top: 2px;
-        img{
+        img {
           margin-left: -5px;
         }
       }
@@ -584,6 +599,28 @@ footer {
       border-top-right-radius: 50%;
       border-bottom-right-radius: 50%;
       z-index: 3;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    h1 {
+      top: 20%;
+      font-size: 60px;
+    }
+    h2 {
+      top: 30%;
+      font-size: 20px;
+    }
+  }
+  .resort-block {
+    margin: auto;
+    text-align: center;
+    .card {
+      .collapse {
+        height: 800px;
+      }
     }
   }
 }
