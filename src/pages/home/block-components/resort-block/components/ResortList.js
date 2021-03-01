@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row, Accordion, Card, Button } from "react-bootstrap";
 import Resort from "./Resort.js";
-import resortBG from "../../../assets/images/resortsBG.svg"
+import resortBG from "../../../../../assets/images/resorts-bg.svg"
 export default function ResortList(props) {
   return (
     <>

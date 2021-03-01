@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import ResortBlock from "../resort-block/ResortBlock";
+import Footer from "./Footer";
+import ResortBlock from "../home/block-components/resort-block/ResortBlock";
 import { Component } from "react";
 export default class Home extends Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export default class Home extends Component {
     this.update = this.update.bind(this);
     this.state = {
       country: "",
-      countryDATA: ""
+      countryDATA: "",
     };
   }
 
@@ -18,13 +19,12 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <header>
-          <Header update={this.update} />
-        </header>
-        <ResortBlock country={this.state.country} countryDATA={this.state.countryDATA}/>
-        <footer>
-          
-        </footer>
+        <Header update={this.update} />
+        <ResortBlock
+          country={this.state.country}
+          countryDATA={this.state.countryDATA}
+        />
+        <Footer />
       </>
     );
   }
