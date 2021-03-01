@@ -26,11 +26,11 @@ export default class Resort extends Component {
               {this.props.data.travel.map((a) => {
                 return (
                   <>
-                    <i class={a}></i>&nbsp;&nbsp;
+                    <i class={a}></i>&nbsp;
                   </>
                 );
               })}
-              &nbsp;&nbsp;
+              
             </li>
             <li>
               <h4>рейтинг</h4>

@@ -6,6 +6,7 @@
       "bg": "./src/pages/resort-block/assets/img/hybini.png",
       "resort": {
         "title": "big wood",
+        "website": "https://bigwood.ru/",
         "rating": [
           "fas fa-star",
           "fas fa-star",
@@ -36,7 +37,8 @@
       "title": "Роза Хутор",
       "bg": "./src/pages/resort-block/assets/img/hybini.png",
       "resort": {
-        "title": "Роза Хутор",
+        "title": "Rosa Khutor",
+        "website": "https://rosakhutor.com/",
         "rating": [
           "fas fa-star",
           "fas fa-star",
@@ -65,27 +67,47 @@
   ],
   "france": [
     {
-      "id": 1,
-      "title": "хибины",
+      "id": 3,
+      "title": "Монблан Анлимитед",
       "bg": "./src/pages/resort-block/assets/img/hybini.png",
-      "data": {
-        "title": "хибины",
-        "skipass": [
-          {"adultDay1": 1000},
-          {"day2": 2000}
-        ]
-      }
-    },
-    {
-      "id": 2,
-      "title": "хибины",
-      "bg": "./src/pages/resort-block/assets/img/hybini.png",
-      "data": {
-        "title": "хибины",
-        "skipass": {
-          "day1": 1000,
-          "day2": 2000
-        }
+      "resort": {
+        "title": "Mont-Blanc Unlimited",
+        "rating": [
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star"
+        ],
+        "travel":[
+          "fas fa-train",
+          "fas fa-plane",
+          "fas fa-car",
+          "fas fa-bus"
+      ],
+      "skipass": [
+        {"dayNumber": "1 день", "adultDay": 56.5, "childDay": 48, "currency": "евро"},
+        {"dayNumber": "2 дня", "adultDay": 112, "childDay": 95.2, "currency": "евро"},
+        {"dayNumber": "3 дня", "adultDay": 167.5, "childDay": 142.4, "currency": "евро"},
+        {"dayNumber": "4 дня", "adultDay": 212, "childDay": 180.2, "currency": "евро"},
+        {"dayNumber": "5 дней", "adultDay": 257, "childDay": 218.5, "currency": "евро"},
+        {"dayNumber": "6 дней", "adultDay": 282, "childDay": 239.7, "currency": "евро"},
+        {"dayNumber": "7 дней", "adultDay": 313, "childDay": 266.1, "currency": "евро"},
+        {"dayNumber": "8 дней", "adultDay": 344, "childDay": 292.4, "currency": "евро"},
+        {"dayNumber": "9 дней", "adultDay": 375, "childDay": 318.8, "currency": "евро"},
+        {"dayNumber": "10 дней", "adultDay": 406, "childDay": 345.1, "currency": "евро"},
+        {"dayNumber": "11 дней", "adultDay": 437, "childDay": 371.5, "currency": "евро"},
+        {"dayNumber": "12 дней", "adultDay": 468, "childDay": 397.8, "currency": "евро"},
+        {"dayNumber": "13 дней", "adultDay": 499, "childDay": 424.2, "currency": "евро"},
+        {"dayNumber": "14 дней", "adultDay": 530, "childDay": 450.5, "currency": "евро"},
+        {"dayNumber": "15 дней", "adultDay": 561, "childDay": 476.9, "currency": "евро"},
+        {"dayNumber": "16 дней", "adultDay": 592, "childDay": 503.2, "currency": "евро"},
+        {"dayNumber": "17 дней", "adultDay": 623, "childDay": 529.6, "currency": "евро"},
+        {"dayNumber": "18 дней", "adultDay": 654, "childDay": 555.9, "currency": "евро"},
+        {"dayNumber": "19 дней", "adultDay": 685, "childDay": 582.3, "currency": "евро"},
+        {"dayNumber": "20 дней", "adultDay": 716, "childDay": 608.6, "currency": "евро"},
+        {"dayNumber": "21 день", "adultDay": 747, "childDay": 635, "currency": "евро"}
+      ]
       }
     }
   ]

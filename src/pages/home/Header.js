@@ -33,6 +33,8 @@ export default class Header1 extends Component {
   }
   async onResBlock(event, id, country) {
     const block = document.getElementById("res-block");
+    const navBlock = document.getElementById("nav-btn");
+    navBlock.click();
     block.style.display = "block";
     await this.setState({ idResort: id, country: country });
     this.props.update(this.state.idResort, this.state.country);
@@ -47,9 +49,7 @@ export default class Header1 extends Component {
   listenScrollEvent() {
     const block = document.getElementById("headerID");
     const headerHeight = block.offsetHeight - 50;
-    if (window.scrollY > headerHeight) {
-      this.setState({ bgColor: "#b1cfee" });
-    } else if (window.scrollY > 99) {
+    if (window.scrollY > 99) {
       this.setState({ bgColor: "#11ffee00" });
     } else {
       this.setState({ bgColor: "#001122" });
@@ -79,7 +79,7 @@ export default class Header1 extends Component {
               onClick={this.scrollToTop}
             />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" id="nav-btn" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="#home" style={style.link}>
