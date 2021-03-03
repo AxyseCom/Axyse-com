@@ -128,10 +128,10 @@ export default class Header1 extends Component {
                       offset={0}
                       duration={1500}
                       onClick={(e) => {
-                        this.onResBlock(e, "США");
+                        this.onResBlock(e, "Австрия", "austria");
                       }}
                     >
-                      США
+                      Австрия
                     </Link>
                   </NavDropdown.Item>
                 </NavDropdown>

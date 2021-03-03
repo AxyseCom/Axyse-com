@@ -110,5 +110,48 @@
       ]
       }
     }
+  ],
+  "austria": [
+    {
+      "id": 4,
+      "title": "Бад Гаштайн",
+      "bg": "./src/pages/resort-block/assets/img/hybini.png",
+      "resort": {
+        "title": "Bad Gastein",
+        "rating": [
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star",
+          "fas fa-star"
+        ],
+        "travel":[
+          "fas fa-train",
+          "fas fa-plane",
+          "fas fa-car",
+          "fas fa-bus"
+      ],
+      "skipass": [
+        {"dayNumber": "1 день", "adultDay": 50.5, "childDay": 29, "currency": "евро"},
+        {"dayNumber": "2 дня", "adultDay": 114, "childDay": 57, "currency": "евро"},
+        {"dayNumber": "3 дня", "adultDay": 170, "childDay": 85, "currency": "евро"},
+        {"dayNumber": "4 дня", "adultDay": 221, "childDay": 110.5, "currency": "евро"},
+        {"dayNumber": "5 дней", "adultDay": 263.5, "childDay": 132, "currency": "евро"},
+        {"dayNumber": "6 дней", "adultDay": 286, "childDay": 143, "currency": "евро"},
+        {"dayNumber": "7 дней", "adultDay": 318.5, "childDay": 159.5, "currency": "евро"},
+        {"dayNumber": "8 дней", "adultDay": 350, "childDay": 175, "currency": "евро"},
+        {"dayNumber": "9 дней", "adultDay": 380, "childDay": 190, "currency": "евро"},
+        {"dayNumber": "10 дней", "adultDay": 404.5, "childDay": 202.5, "currency": "евро"},
+        {"dayNumber": "11 дней", "adultDay": 428.5, "childDay": 214.5, "currency": "евро"},
+        {"dayNumber": "12 дней", "adultDay": 451.5, "childDay": 226, "currency": "евро"},
+        {"dayNumber": "13 дней", "adultDay": 474, "childDay": 237, "currency": "евро"},
+        {"dayNumber": "14 дней", "adultDay": 494.5, "childDay": 247.5, "currency": "евро"},
+        {"dayNumber": "15 дней", "adultDay": 515, "childDay": 257.5, "currency": "евро"},
+        {"dayNumber": "16 дней", "adultDay": 534.5, "childDay": 267.5, "currency": "евро"},
+        {"dayNumber": "17 дней", "adultDay": 551.5, "childDay": 276, "currency": "евро"},
+        {"dayNumber": "18 дней", "adultDay": 568, "childDay": 284, "currency": "евро"}
+      ]
+      }
+    }
   ]
 }

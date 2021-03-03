@@ -19,6 +19,9 @@ export default class ResortBlock extends Component {
       case "france": {
         return <ResortList resorts={this.state.country.france} />;
       }
+      case "austria": {
+        return <ResortList resorts={this.state.country.austria} />;
+      }
     }
   }
 
