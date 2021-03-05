@@ -149,7 +149,7 @@ export default class Header1 extends Component {
             ))}
           </div>
           <h1>Axyse</h1>
-          <h2>найди свой курорт</h2>
+          <h2>сколько стоит ски-пасс</h2>
           <div className="uran-pos-box">
             <div className="planetBox">
               <div className="ring-one-front"></div>
