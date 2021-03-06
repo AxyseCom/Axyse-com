@@ -7,16 +7,27 @@ export default class Resort extends Component {
   constructor(props) {
     super(props);
     this.getPrice = this.getPrice.bind(this);
+    this.deletePrice = this.deletePrice.bind(this);
     this.state = {
       day: "",
       price: "",
-      currency: ""
+      currency: "",
+      id: 0,
+      value: false,
     };
   }
   getPrice(event, day, price, currency) {
-    this.setState({ day: day, price: price, currency: currency });
+    this.setState({ day: day, price: price, currency: currency, id: this.props.data.id });
   }
+
+  deletePrice(event) {
+    this.setState({ day: "", price: "", currency: "", id: this.props.data.id });
+  }
+
   render() {
+    if(this.state.id != this.props.data.id){
+      this.deletePrice()
+    }
     return (
       <>
         <Card.Body>
@@ -30,7 +41,6 @@ export default class Resort extends Component {
                   </>
                 );
               })}
-              
             </li>
             <li>
               <h4>рейтинг</h4>
@@ -63,7 +73,7 @@ export default class Resort extends Component {
                         this.getPrice(
                           e,
                           price.dayNumber,
-                          price.adultDay, 
+                          price.adultDay,
                           price.currency
                         );
                       }}

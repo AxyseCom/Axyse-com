@@ -7,6 +7,7 @@
       "resort": {
         "title": "big wood",
         "website": "https://bigwood.ru/",
+        "id": 1,
         "rating": [
           "fas fa-star",
           "fas fa-star",
@@ -39,6 +40,7 @@
       "resort": {
         "title": "Rosa Khutor",
         "website": "https://rosakhutor.com/",
+        "id": 2,
         "rating": [
           "fas fa-star",
           "fas fa-star",
@@ -72,6 +74,7 @@
       "bg": "./src/pages/resort-block/assets/img/hybini.png",
       "resort": {
         "title": "Mont-Blanc Unlimited",
+        "id": 3,
         "rating": [
           "fas fa-star",
           "fas fa-star",
@@ -118,6 +121,7 @@
       "bg": "./src/pages/resort-block/assets/img/hybini.png",
       "resort": {
         "title": "Bad Gastein",
+        "id": 4,
         "rating": [
           "fas fa-star",
           "fas fa-star",

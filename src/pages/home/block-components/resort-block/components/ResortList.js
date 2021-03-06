@@ -1,7 +1,8 @@
 import React from "react";
 import { Col, Container, Row, Accordion, Card, Button } from "react-bootstrap";
 import Resort from "./Resort.js";
-import resortBG from "../../../../../assets/images/resorts-bg.svg"
+import resortBG from "../../../../../assets/images/resorts-bg.svg";
+
 export default function ResortList(props) {
   return (
     <>
@@ -25,7 +26,7 @@ export default function ResortList(props) {
                 </Accordion.Toggle>
               </Card.Header>
               <Accordion.Collapse eventKey={resort.id}>
-                <Resort data={resort.resort}/>
+                <Resort data={resort.resort} />
               </Accordion.Collapse>
             </Card>
           );
