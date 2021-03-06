@@ -8,6 +8,8 @@ $ice-light-color: #b1cfee;
 $ice-font: #7aa5d5;
 $dark-ice-font: #215b8f;
 $orange: #ff6823;
+$dark-orange: #531300;
+$dark-pink: rgb(82, 0, 69);
 $cosmo-color: rgb(14, 0, 12);
 
 body {
@@ -29,18 +31,18 @@ body {
   .mr-auto {
     a {
       font-size: 25px;
-      color: $ice-font;
+      color: $orange;
       text-decoration: none;
       font-weight: 700;
       font-family: "Comfortaa", cursive;
       &:hover {
-        color: $orange;
+        color: $dark-orange;
         text-decoration: none;
       }
     }
     .dropdown {
       a {
-        color: $ice-font;
+        color: $orange;
       }
       &:hover .dropdown-menu {
         display: block;
@@ -228,6 +230,9 @@ header {
           font-family: "Comfortaa", cursive;
           font-size: 40px;
         }
+        .checkbox-container{
+          display: inline-block;
+        }
       }
       li:first-child {
         margin-top: 70px;
@@ -246,14 +251,14 @@ header {
       button {
         height: 100%;
         width: 100%;
-        color: $orange;
+        color: $dark-pink;
         text-transform: uppercase;
         font-family: "Comfortaa", cursive;
         font-size: 5rem;
         text-align: left;
         &:hover {
           text-decoration: none;
-          color: $ice-font;
+          color: $orange;
         }
       }
 

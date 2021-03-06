@@ -27,7 +27,7 @@
         {"dayNumber": "4 дня", "adultDay": 4300, "childDay": 3500, "currency": "руб"},
         {"dayNumber": "5 дней", "adultDay": 5000, "childDay": 4100, "currency": "руб"},
         {"dayNumber": "6 дней", "adultDay": 6200, "childDay": 5000, "currency": "руб"},
-        {"dayNumber": "неделя", "adultDay": 6500, "childDay": 5500, "currency": "руб"},
+        {"dayNumber": "7 дней", "adultDay": 6500, "childDay": 5500, "currency": "руб"},
         {"dayNumber": "8 дней", "adultDay": 7300, "childDay": 6100, "currency": "руб"},
         {"dayNumber": "9 дней", "adultDay": 8100, "childDay": 6500, "currency": "руб"}
       ]
@@ -60,7 +60,7 @@
         {"dayNumber": "4 дня", "adultDay": 13700, "childDay": 6850, "currency": "руб"},
         {"dayNumber": "5 дней", "adultDay": 15500, "childDay": 7800, "currency": "руб"},
         {"dayNumber": "6 дней", "adultDay": 17600, "childDay": 8800, "currency": "руб"},
-        {"dayNumber": "неделя", "adultDay": 19800, "childDay": 9900, "currency": "руб"},
+        {"dayNumber": "7 дней", "adultDay": 19800, "childDay": 9900, "currency": "руб"},
         {"dayNumber": "8 дней", "adultDay": 22600, "childDay": 11300, "currency": "руб"},
         {"dayNumber": "10 дней", "adultDay": 27600, "childDay": 13800, "currency": "руб"}
       ]
